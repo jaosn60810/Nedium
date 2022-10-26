@@ -16,7 +16,7 @@ jobs:
         run: yarn
 
       - name: Generate Site
-        yarn: yarn generate
+        run: yarn generate
 
       - name: Deploy Site
         uses: FirebaseExtended/action-hosting-deploy@v0
