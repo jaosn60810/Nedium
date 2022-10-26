@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      -name: Install deps
+      - name: Install deps
        run: yarn
 
-      -name: Generate Site
+      - name: Generate Site
        yarn: yarn generate
 
       - name: Deploy Site
