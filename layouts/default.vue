@@ -1,13 +1,25 @@
 <template>
   <v-app>
+    <TheNavigation />
     <v-main>
       <v-container>
-        <Nuxt></Nuxt>
+        <v-row>
+          <v-col cols="12" md="10">
+            <Nuxt />
+          </v-col>
+          <v-col cols="12" md="2">
+            <!-- Ads / permanent side content -->
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
   </v-app>
 </template>
 
-<script setup lang="ts"></script>
+<script>
+export default {
+  name: 'DefaultLayout',
+}
+</script>
 
-<style scoped></style>
+<style></style>
